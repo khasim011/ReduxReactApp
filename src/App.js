@@ -1,18 +1,26 @@
 import React, {  
   Component,
 } from 'react';
-//import Routes  from './routes';
-
 
 // App.js
 export class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    alert();
+  };
 
   render() {
     return (
       <div>
-
         <h1>{this.props.geod.title || 'Hello World!'}</h1>
-
+        
         {this.props.geod.title ?
           <button onClick={this.props.closeGeod}>
             Exit Geod
@@ -21,8 +29,10 @@ export class App extends Component {
             Click Me!
           </button>
        }
+       <button onClick={this.handleClick}>
+        Get State!
+      </button>
       </div>
     );
   }
-
 }

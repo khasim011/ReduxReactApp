@@ -1,3 +1,11 @@
+Redux
+-----
+This will help to manage the state tree or object of the entire application.
+view(react.js)-->dispatch action-->reducer(will check for state change)-->
+store-->subscribe-->view
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
